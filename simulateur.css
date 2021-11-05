@@ -1,0 +1,125 @@
+#aAfficher {
+    display: none;
+}
+
+#resultat {
+    display: none;
+}
+
+#menuEchelon {
+    display: none;
+}
+
+#menu_annees_separation {
+    display: none;
+}
+
+#menu_enfants_a_charge {
+    display: none;
+}
+
+#menu_residences_professionnelles {
+    display: none;
+}
+
+#menu_anciennete_poste {
+    display: none;
+}
+
+#menus_stagiaires {
+    display: none;
+}
+
+#calcul {
+    display: block;
+}
+
+.boldp {
+   font-weight: bold;
+   font-style: italic;
+}
+
+input {
+  position: relative;
+/*  padding: 0 0 0 1em; */
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  min-width: 380px;
+  width: 300%;
+  font-size: 0.65rem;
+  background: #111;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  border-radius: 6px;
+  transform: translate(-50%,0);
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 100;
+  bottom: 125%;
+  left: 0;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  background: transparent;
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 720px) {
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      /* border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+    }
+    .tooltip .tooltiptext {
+      display: none;
+      position: relative;
+      min-width: 200px;
+      width: 80%;
+      top: 0;
+      margin: 0;
+      left: 0;
+      transform: translate(0, 0);
+    }
+    .tooltip:hover .tooltiptext {
+      display: inline-block;
+      visibility: visible;
+      opacity: 1;
+    }
+    /* remove Tooltip arrow */
+    .tooltip .tooltiptext::after {
+            border-color: transparent transparent transparent transparent;
+    }
+}
+
+
