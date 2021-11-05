@@ -106,13 +106,9 @@ function calculmutation() {
 
     //Affichage du résultat
     document.getElementById("pt_partie_commune").innerHTML = pt_partie_commune + " pts";
-    document.getElementById("ct_partie_commune").innerHTML = ct_partie_commune ;
     document.getElementById("pt_situation_familiale").innerHTML = pt_situation_familiale + " pts";
-    document.getElementById("ct_situation_familiale").innerHTML = ct_situation_familiale;
     document.getElementById("pt_situation_personnelle").innerHTML = pt_situation_personnelle + " pts";
-    document.getElementById("ct_situation_personnelle").innerHTML = ct_situation_personnelle ;
     document.getElementById("pt_voeu").innerHTML = pt_voeu + " pts";
-    document.getElementById("ct_voeu").innerHTML = ct_voeu;
     document.getElementById("pt_total").innerHTML = pt_total + " pts";
 
 
