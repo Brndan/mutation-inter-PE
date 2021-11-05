@@ -106,19 +106,18 @@
 <h2>Situation familiale</h2>
 
 <div class="blocSelection" id="menu_bonification_familiale">
-   <label for="menu_bonification_familiale">Bonification familiale:
+   <label for="menu_bonification_familiale">Bonification familiale : rapprochement de conjoint ou autorité conjointe
    <div class="tooltip">ℹ️<div class="tooltiptext">
         Attention, ces bonifications devront être justifiées auprès du rectorat afin d'être validées par celui-ci.
    </div></div>
    </label>
    <div class="menuSelection">
       <select id="bonification_familiale" 
-            onchange="showFormItemWhen('menu_enfants_a_charge','bonification_familiale',['rapprochement_conjoint','autorite_parentale_conjointe']);
+            onchange="showFormItemWhen('menu_enfants_a_charge','bonification_familiale',['rapprochement_conjoint']);
                       showFormItemWhen('menu_annees_separation','bonification_familiale',['rapprochement_conjoint']);
                       showFormItemWhen('menu_residences_professionnelles','bonification_familiale',['rapprochement_conjoint']);">
          <option value="none" selected>Aucune</option>
          <option value="rapprochement_conjoint">Rapprochement de conjoint</option>
-         <option value="autorite_parentale_conjointe">Autorité parentale conjointe</option>
       </select>
    </div>
 </div>  
