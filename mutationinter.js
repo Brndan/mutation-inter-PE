@@ -54,7 +54,7 @@ function calculmutation() {
                                                                         "rep"         : 45};
     const pt_situation_personnelle_affectation_mayotte_guyane = 100;
     const pt_situation_personnelle_situation_medicale = {"none"                           : 0,
-                                                         "amelioration_situation_handicap": 1000,
+                                                         "demande_speciale_handicap"      : 800,
                                                          "obligation_emploi"              : 100  };
     const pt_situation_personnelle_ATP_par_annee = 50;
     const pt_situation_personnelle_ATP_nb_max_annee = 4;
