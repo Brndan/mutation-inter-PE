@@ -56,10 +56,10 @@ function calculmutation() {
     const pt_situation_personnelle_situation_medicale = {"none"                           : 0,
                                                          "demande_speciale_handicap"      : 800,
                                                          "obligation_emploi"              : 100  };
-    const pt_situation_personnelle_ATP_par_annee = 50;
-    const pt_situation_personnelle_ATP_nb_max_annee = 4;
+    //const pt_situation_personnelle_ATP_par_annee = 50;
+    //const pt_situation_personnelle_ATP_nb_max_annee = 4;
     // voeux spécifiques
-    const pt_voeux_voeu_preferentiel_par_annee_consecutive = 20;
+    const pt_voeux_voeu_preferentiel_par_annee_consecutive = 5;
     const pt_voeux_voeu_preferentiel_max = 100;
     const pt_voeux_voeu_corse = {"none"         : 0,
                                  "stagiaire"    : 600,
