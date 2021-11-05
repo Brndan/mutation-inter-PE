@@ -61,12 +61,7 @@ function calculmutation() {
     // voeux spécifiques
     const pt_voeux_voeu_preferentiel_par_annee_consecutive = 5;
     const pt_voeux_voeu_preferentiel_max = 100;
-    const pt_voeux_voeu_corse = {"none"         : 0,
-                                 "stagiaire"    : 600,
-                                 "fonctionnaire": 1400,
-                                 "2edemande"    : 800,
-                                 "3edemande"    : 1000};
-    const pt_voeux_voeu_DOM_mayotte = 1000;
+    const cimm = 600;
 
     // --------   récupération de valeurs clés ---------
     // Récupération des valeurs de la partie communune
@@ -92,8 +87,8 @@ function calculmutation() {
 
     // Récupération des données de voeux
     let voeu_preferentiel = document.getElementById('voeu_preferentiel').value;
-    let voeu_corse = document.getElementById('voeu_corse').value;
-    let voeu_DOM_mayotte = document.getElementById('voeu_DOM_mayotte').checked;
+    //let voeu_corse = document.getElementById('voeu_corse').value;
+    let voeu_cimm = document.getElementById('voeu_cimm').checked;
 
     /* -------------------------
                  CALCUL
@@ -199,8 +194,7 @@ function calculmutation() {
     let ct_voeu = " ";
     let pt_voeux_voeu_preferentiel = Math.min( (voeu_preferentiel - 1 ) * pt_voeux_voeu_preferentiel_par_annee_consecutive, pt_voeux_voeu_preferentiel_max ) ;
     if (voeu_DOM_mayotte) {
-        pt_voeu = pt_voeux_voeu_DOM_mayotte ;
-        ct_voeu = "Affectation en Dom y compris à Mayotte : </br>- 1 000 pts pour les académies de la Guadeloupe, la Guyane, la Martinique et la Réunion et le vice-rectorat de Mayotte </br>- Conditions : Avoir son Centre d’Intérêts Moraux et Matériels (CIMM) dans ce Dom. Formuler le vœu Dom ou Mayotte en rang 1.";
+        pt_voeu = cimm ;6      ct_voeu = "Affectation en Dom y compris à Mayotte : </br>- 1 000 pts pour les académies de la Guadeloupe, la Guyane, la Martinique et la Réunion et le vice-rectorat de Mayotte </br>- Conditions : Avoir son Centre d’Intérêts Moraux et Matériels (CIMM) dans ce Dom. Formuler le vœu Dom ou Mayotte en rang 1.";
     }
     if (voeu_corse != "none") {
         pt_voeu = pt_voeux_voeu_corse[voeu_corse] ;
