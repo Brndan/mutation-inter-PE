@@ -17,24 +17,22 @@ function calculmutation() {
     const pt_echelon_exceptionnel_forfait = 77 ;
     const pt_echelon_max = 98;
     // situation familiale
-    const pt_situation_familiale_rapprochement_conjoint = 150.2;
+    const pt_situation_familiale_rapprochement_conjoint = 150;
     const pt_situation_familiale_annees_de_separation = {0  : 0,
-                                                         0.5: 95,
-                                                         1  : 190,
-                                                         1.5: 285,
-                                                         2  : 325,
-                                                         2.5: 420,
-                                                         3  : 475,
-                                                         3.5: 570,
-                                                         4  : 600 };
+                                                         0.5: 25,
+                                                         1  : 50,
+                                                         1.5: 75,
+                                                         2  : 200,
+                                                         2.5: 425,
+                                                         3  : 350,
+                                                         3.5: 375,
+                                                         4  : 450 };
     const pt_situation_familiale_residences_professionnelles = {"none"                        : 0,
-                                                                "departements_limitrophes"    : 0,
-                                                                "departements_non_limitrophes": 50,
-                                                                "academies_non_limitrophes"   : 100};
-    const pt_situation_familiale_autorite_parentale_conjointe = 150.2;
-    const pt_situation_familiale_par_enfants_a_charge = 100;
-    const pt_situation_familiale_parent_isole = 150;
-    const pt_situation_familiale_mutation_simultanee = 80; // NB : non cumulable avec les bonifications « rapprochement de conjoint », « parent Isolé », « autorité parentale conjointe », « vœu préférentiel ».
+                                                                "academies_non_limitrophes"   : 80};
+    //const pt_situation_familiale_autorite_parentale_conjointe = 150.2;
+    const pt_situation_familiale_par_enfants_a_charge = 50;
+    //const pt_situation_familiale_parent_isole = 150;
+    //const pt_situation_familiale_mutation_simultanee = 80; // NB : non cumulable avec les bonifications « rapprochement de conjoint », « parent Isolé », « autorité parentale conjointe », « vœu préférentiel ».
     // situation personnelle et administrative
     const pt_situation_personnelle_entree_metier = 10;
     const pt_situation_personnelle_academie_stage = 0.1;

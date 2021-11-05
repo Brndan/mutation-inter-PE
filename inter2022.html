@@ -12,31 +12,48 @@
 
 <body>
 <h2>Partie commune</h2>
-<div class="blocSelection">
-   <label for="statut">Sélectionnez votre statut&nbsp;: 
-       <div class="tooltip">ℹ️<div class="tooltiptext">
-       Stagiaire ex autre corps: Stagiaire précédemment titulaire d'un autre corps de personnels enseignant, d’éducation et d’orientation. 
-       </div></div>
+
+
+
+<div class="blocSelection" id="menu_echelon">
+   <label for="menu_echelon">Sélectionnez votre échelon :
+   <div class="tooltip">ℹ️<div class="tooltiptext">
+        Echelon au 31/08/2021 (au 01/09/2021 si entrée dans le métier et reclassement).
+   </div></div>
    </label>
    <div class="menuSelection">
-      <select id="statut" onchange="showFormItemWhen('menu_anciennete_poste','statut',['titulaire','stagiaire_ex_autre_corps']);
-                                    showFormItemWhen('menus_stagiaires','statut',['stagiaire','stagiaire_ex_contractuel','stagiaire_ex_autre_corps']);
-                                    showFormItemWhen('menu_contractuel_actif_avant_stage','statut',['stagiaire_ex_contractuel']);
-                                    showFormItemWhen('menu_academie_ex_corps','statut',['stagiaire_ex_autre_corps']);">
-         <option value="rien" selected>Choisissez…</option>
-         <option value="titulaire">Titulaire</option>
-         <option value="stagiaire">Stagiaire</option>
-         <option value="stagiaire_ex_contractuel">Stagiaire ex-contractuel</option>
-         <option value="stagiaire_ex_autre_corps">Stagiaire ex autre corps</option>
+      <select id="echelon">
+         <option value="22" selected>Échelon 2 classe normale</option>
+         <option value="22">Échelon 3 classe normale</option>
+         <option value="26">Échelon 4 classe normale</option>
+         <option value="29">Échelon 5 classe normale</option>
+         <option value="33">Échelon 6 classe normale</option>
+         <option value="36">Échelon 7 classe normale</option>
+         <option value="39">Échelon 8 classe normale</option>
+         <option value="39">Échelon 9 classe normale</option>
+         <option value="39">Échelon 10 classe normale</option>
+         <option value="42">Échelon 11 classe normale</option>
+         <option value="39">Échelon 1 hors-classe</option>
+         <option value="39">Échelon 2 hors-classe</option>
+         <option value="39">Échelon 3 hors-classe</option>
+         <option value="42">Échelon 4 hors-classe</option>
+         <option value="45">Échelon 5 hors-classe</option>
+         <option value="48">Échelon 6 hors-classe</option>
+         <option value="48">Échelon 7 hors-classe</option>
+         <option value="39">Échelon 1 classe exceptionnelle</option>
+         <option value="42">Échelon 2 classe exceptionnelle</option>
+         <option value="45">Échelon 3 classe exceptionnelle</option>
+         <option value="48">Échelon 4 classe exceptionnelle</option>
+         <option value="54">Échelon spécial</option>
       </select>
    </div>
 </div>
 
 <div class="blocSelection" id="menu_anciennete_poste">
    <label for="menu_anciennete_poste">
-   Sélectionnez votre ancienneté :
+   Sélectionnez votre ancienneté dans le département au 31 août 2022 :
    <div class="tooltip">ℹ️<div class="tooltiptext">
-        Votre ancienneté en années au 31/08/2020, dans le poste actuel ou dans le dernier occupé si disponibilité, congé, ATP, ou si vous êtes stagiaire précédemment titulaire d’un autre corps de personnel enseignant, d’éducation et d’orientation. 
+        Votre ancienneté en années au 31/08/2022. 
    </div></div>
    </label> 
    <div class="menuSelection">
@@ -86,41 +103,6 @@
    </div>
 </div>
 
-<div class="blocSelection" id="menu_echelon">
-   <label for="menu_echelon">Sélectionnez votre échelon :
-   <div class="tooltip">ℹ️<div class="tooltiptext">
-        Echelon au 31/08/2021 (au 01/09/2021 si entrée dans le métier et reclassement).
-   </div></div>
-   </label>
-   <div class="menuSelection">
-      <select id="echelon">
-         <option value="22" selected>Échelon 2 classe normale</option>
-         <option value="22">Échelon 3 classe normale</option>
-         <option value="26">Échelon 4 classe normale</option>
-         <option value="29">Échelon 5 classe normale</option>
-         <option value="33">Échelon 6 classe normale</option>
-         <option value="36">Échelon 7 classe normale</option>
-         <option value="39">Échelon 8 classe normale</option>
-         <option value="39">Échelon 9 classe normale</option>
-         <option value="39">Échelon 10 classe normale</option>
-         <option value="42">Échelon 11 classe normale</option>
-         <option value="39">Échelon 1 hors-classe</option>
-         <option value="39">Échelon 2 hors-classe</option>
-         <option value="39">Échelon 3 hors-classe</option>
-         <option value="42">Échelon 4 hors-classe</option>
-         <option value="45">Échelon 5 hors-classe</option>
-         <option value="48">Échelon 6 hors-classe</option>
-         <option value="48">Échelon 7 hors-classe</option>
-         <option value="39">Échelon 1 classe exceptionnelle</option>
-         <option value="42">Échelon 2 classe exceptionnelle</option>
-         <option value="45">Échelon 3 classe exceptionnelle</option>
-         <option value="48">Échelon 4 classe exceptionnelle</option>
-         <option value="54">Échelon spécial</option>
-      </select>
-   </div>
-</div>
-
-
 <h2>Situation familiale</h2>
 
 <div class="blocSelection" id="menu_bonification_familiale">
@@ -137,8 +119,6 @@
          <option value="none" selected>Aucune</option>
          <option value="rapprochement_conjoint">Rapprochement de conjoint</option>
          <option value="autorite_parentale_conjointe">Autorité parentale conjointe</option>
-         <option value="parent_isole">Parent isolé</option>
-         <option value="mutation_simultanee">Mutation simultanée</option>
       </select>
    </div>
 </div>  
@@ -147,7 +127,7 @@
    <label for="menu_annees_separation">Années de séparation:
    <div class="tooltip">ℹ️<div class="tooltiptext">
         ° Nécessite au moins 6 mois de séparation effective par année scolaire.</br>
-        ° Les conjoint-e-s sont considéré-e-s comme séparé-e-s s'ils/elles exercent leur activité dans deux départements distincts.</br>
+        ° Les conjoint-e-s sont considéré-e-s comme séparé-e-s s'ils/elles exercent leur activité dans deux départements distincts. Mais aucune année de séparation n’est comptée entre les départements 75 et 92, 75 et 93,  75 et 94</br>
         ° Les périodes de congé parental et disponibilité pour suivre le/la conjoint-e sont prises en compte pour la moitié de leur durée.
    </div></div>
    </label>
@@ -190,13 +170,13 @@
 </div>
 
 <div class="blocSelection" id="menu_residences_professionnelles">
-   <label for="menu_residences_professionnelles">Lieu de résidence professionnelle des deux conjoints :</label>
+   <label for="menu_residences_professionnelles">Exercice dans un département d’une académie non limitrophe de celle de mon/ma conjoint⋅e ou de l'autre détenteur⋅ice de l'autorité parentale conjointe</label>
    <div class="menuSelection">
       <select id="residences_professionnelles">
          <option value="none" selected>Choisissez…</option>
-         <option value="departements_limitrophes">académies et départements limitrophes</option>
-         <option value="departements_non_limitrophes">départements non limitrophes relevant d’académies limitrophes</option>
-         <option value="academies_non_limitrophes">académies non limitrophes</option>
+         <option value="none">0 année ou autres cas</option>
+         <option value="academies_non_limitrophes">oui et au moins une année de spération</option>
+         
       </select>
    </div>
 </div>
