@@ -31,6 +31,7 @@ function calculmutation() {
     // voeux spécifiques
     const pt_voeux_voeu_preferentiel_par_annee_consecutive = 5;
     const cimm = 600;
+    const guyane = 90;
 
 
     /* -------------------------
@@ -100,6 +101,11 @@ function calculmutation() {
     //CIMM
     if (document.getElementById("voeu_cimm").checked) {
         pt_voeu += cimm;
+    }
+    
+    // Guyane
+    if (document.getElementById("guyane").checked) {
+        pt_voeu += guyane;
     }
 
     // Somme totale 
