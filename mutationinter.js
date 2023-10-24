@@ -21,7 +21,8 @@ function calculmutation() {
     const pt_situation_familiale_par_enfants_a_charge = 50;
     const pt_situation_personnelle_affectation_education_prioritaire = {"none"        : 0,
                                                                         "rep+"        : 90,
-                                                                        "rep"         : 45};
+                                                                        "rep"         : 45,
+                                                                        "cla"         : 27};
     const pt_situation_personnelle_situation_medicale = {"none"                           : 0,
                                                          "demande_speciale_handicap"      : 800,
                                                          "obligation_emploi"              : 100  };
