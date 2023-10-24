@@ -5,313 +5,340 @@
 
    <title>Barème</title>
    <meta charset="utf-8">
-<script type="text/javascript" src="mutationinter.js"></script>
-<link rel="stylesheet" type="text/css" href="simulateur.css">
+   <script type="text/javascript" src="mutationinter.js"></script>
+   <link rel="stylesheet" type="text/css" href="simulateur.css">
 
 </head>
 
 <body>
-<h2>Partie commune</h2>
+   <h2>Partie commune</h2>
 
 
 
-<div class="blocSelection" id="menu_echelon">
-   <label for="menu_echelon">Sélectionnez votre échelon :
-   <div class="tooltip">ℹ️<div class="tooltiptext">
-        Échelon au 31/08/2023 (au 01/09/2023 si entrée dans le métier et reclassement).
-   </div></div>
-   </label>
-   <div class="menuSelection">
-      <select id="echelon">
-         <option value="22" selected>Échelon 2 classe normale</option>
-         <option value="22">Échelon 3 classe normale</option>
-         <option value="26">Échelon 4 classe normale</option>
-         <option value="29">Échelon 5 classe normale</option>
-         <option value="33">Échelon 6 classe normale</option>
-         <option value="36">Échelon 7 classe normale</option>
-         <option value="39">Échelon 8 classe normale</option>
-         <option value="39">Échelon 9 classe normale</option>
-         <option value="39">Échelon 10 classe normale</option>
-         <option value="42">Échelon 11 classe normale</option>
-         <option value="39">Échelon 1 hors-classe</option>
-         <option value="39">Échelon 2 hors-classe</option>
-         <option value="39">Échelon 3 hors-classe</option>
-         <option value="42">Échelon 4 hors-classe</option>
-         <option value="45">Échelon 5 hors-classe</option>
-         <option value="48">Échelon 6 hors-classe</option>
-         <option value="48">Échelon 7 hors-classe</option>
-         <option value="39">Échelon 1 classe exceptionnelle</option>
-         <option value="42">Échelon 2 classe exceptionnelle</option>
-         <option value="45">Échelon 3 classe exceptionnelle</option>
-         <option value="48">Échelon 4 classe exceptionnelle</option>
-         <option value="54">Échelon spécial</option>
-      </select>
+   <div class="blocSelection" id="menu_echelon">
+      <label for="menu_echelon">Sélectionnez votre échelon :
+         <div class="tooltip">ℹ️<div class="tooltiptext">
+               Échelon au 31/08/2023 (au 01/09/2023 si entrée dans le métier et reclassement).
+            </div>
+         </div>
+      </label>
+      <div class="menuSelection">
+         <select id="echelon">
+            <option value="22" selected>Échelon 2 classe normale</option>
+            <option value="22">Échelon 3 classe normale</option>
+            <option value="26">Échelon 4 classe normale</option>
+            <option value="29">Échelon 5 classe normale</option>
+            <option value="33">Échelon 6 classe normale</option>
+            <option value="36">Échelon 7 classe normale</option>
+            <option value="39">Échelon 8 classe normale</option>
+            <option value="39">Échelon 9 classe normale</option>
+            <option value="39">Échelon 10 classe normale</option>
+            <option value="42">Échelon 11 classe normale</option>
+            <option value="39">Échelon 1 hors-classe</option>
+            <option value="39">Échelon 2 hors-classe</option>
+            <option value="39">Échelon 3 hors-classe</option>
+            <option value="42">Échelon 4 hors-classe</option>
+            <option value="45">Échelon 5 hors-classe</option>
+            <option value="48">Échelon 6 hors-classe</option>
+            <option value="48">Échelon 7 hors-classe</option>
+            <option value="39">Échelon 1 classe exceptionnelle</option>
+            <option value="42">Échelon 2 classe exceptionnelle</option>
+            <option value="45">Échelon 3 classe exceptionnelle</option>
+            <option value="48">Échelon 4 classe exceptionnelle</option>
+            <option value="54">Échelon spécial</option>
+         </select>
+      </div>
    </div>
-</div>
 
-<div class="blocSelection" id="menu_anciennete_poste">
-   <label for="menu_anciennete_poste">
-   Sélectionnez votre ancienneté dans le département au 31 août 2024 :
-   <div class="tooltip">ℹ️<div class="tooltiptext">
-        Votre ancienneté en années au 31/08/2023. 
-   </div></div>
-   </label> 
-   <div class="menuSelection">
-      <select id="anciennete_poste">
-         <option value="0" selected>0</option>
-         <option value="1">1</option>
-         <option value="2">2</option>
-         <option value="3">3</option>
-         <option value="4">4</option>
-         <option value="5">5</option>
-         <option value="6">6</option>
-         <option value="7">7</option>
-         <option value="8">8</option>
-         <option value="9">9</option>
-         <option value="10">10</option>
-         <option value="11">11</option>
-         <option value="12">12</option>
-         <option value="13">13</option>
-         <option value="14">14</option>
-         <option value="15">15</option>
-         <option value="16">16</option>
-         <option value="17">17</option>
-         <option value="18">18</option>
-         <option value="19">19</option>
-         <option value="20">20</option>
-         <option value="21">21</option>
-         <option value="22">22</option>
-         <option value="23">23</option>
-         <option value="24">24</option>
-         <option value="25">25</option>
-         <option value="26">26</option>
-         <option value="27">27</option>
-         <option value="28">28</option>
-         <option value="29">29</option>
-         <option value="30">30</option>
-         <option value="31">31</option>
-         <option value="32">32</option>
-         <option value="33">33</option>
-         <option value="34">34</option>
-         <option value="35">35</option>
-         <option value="36">36</option>
-         <option value="37">37</option>
-         <option value="38">38</option>
-         <option value="39">39</option>
-         <option value="40">40</option>
-      </select>
+   <div class="blocSelection" id="menu_anciennete_poste">
+      <label for="menu_anciennete_poste">
+         Sélectionnez votre ancienneté dans le département au 31 août 2024 :
+         <div class="tooltip">ℹ️<div class="tooltiptext">
+               Votre ancienneté en années au 31/08/2023.
+            </div>
+         </div>
+      </label>
+      <div class="menuSelection">
+         <select id="anciennete_poste">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+         </select>
+      </div>
    </div>
-</div>
 
-<h2>Situation familiale</h2>
+   <h2>Situation familiale</h2>
 
-<div class="blocSelection" id="menu_bonification_familiale">
-   <label for="menu_bonification_familiale">Bonification familiale : rapprochement de conjoint ou autorité conjointe
-   <div class="tooltip">ℹ️<div class="tooltiptext">
-        Attention, ces bonifications devront être justifiées auprès du rectorat afin d'être validées par celui-ci.
-   </div></div>
-   </label>
-   <div class="menuSelection">
-      <select id="bonification_familiale" 
+   <div class="blocSelection" id="menu_bonification_familiale">
+      <label for="menu_bonification_familiale">Bonification familiale : rapprochement de conjoint ou autorité conjointe
+         <div class="tooltip">ℹ️<div class="tooltiptext">
+               Attention, ces bonifications devront être justifiées auprès du rectorat afin d'être validées par
+               celui-ci.
+            </div>
+         </div>
+      </label>
+      <div class="menuSelection">
+         <select id="bonification_familiale"
             onchange="showFormItemWhen('menu_enfants_a_charge','bonification_familiale',['rapprochement_conjoint']);
                       showFormItemWhen('menu_annees_separation','bonification_familiale',['rapprochement_conjoint']);
                       showFormItemWhen('menu_residences_professionnelles','bonification_familiale',['rapprochement_conjoint']);">
-         <option value="none" selected>Aucune</option>
-         <option value="rapprochement_conjoint">Rapprochement de conjoint</option>
-      </select>
+            <option value="none" selected>Aucune</option>
+            <option value="rapprochement_conjoint">Rapprochement de conjoint</option>
+         </select>
+      </div>
    </div>
-</div>  
 
-<div class="blocSelection" id="menu_annees_separation">
-   <label for="menu_annees_separation">Années de séparation :
-   <div class="tooltip">ℹ️<div class="tooltiptext">
-        ° Nécessite au moins 6 mois de séparation effective par année scolaire.<br>
-        ° Les conjoint-e-s sont considéré-e-s comme séparé-e-s s'ils/elles exercent leur activité dans deux départements distincts. Mais aucune année de séparation n’est comptée entre les départements 75 et 92, 75 et 93,  75 et 94</br>
-        ° Les périodes de congé parental et disponibilité pour suivre le/la conjoint-e sont prises en compte pour la moitié de leur durée.
-   </div></div>
-   </label>
-   <div class="menuSelection">
-      <select id="annees_separation">
-         <option value="0" selected>0</option>
-         <option value="0.5">0.5</option>
-         <option value="1">1</option>
-         <option value="1.5">1.5</option>
-         <option value="2">2</option>
-         <option value="2.5">2.5</option>
-         <option value="3">3</option>
-         <option value="3.5">3.5</option>
-         <option value="4">4 ou plus</option>
-      </select>
+   <div class="blocSelection" id="menu_annees_separation">
+      <label for="menu_annees_separation">Années de séparation :
+         <div class="tooltip">ℹ️<div class="tooltiptext">
+               ° Nécessite au moins 6 mois de séparation effective par année scolaire.<br>
+               ° Les conjoint-e-s sont considéré-e-s comme séparé-e-s s'ils/elles exercent leur activité dans deux
+               départements distincts. Mais aucune année de séparation n’est comptée entre les départements 75 et 92, 75
+               et 93, 75 et 94</br>
+               ° Les périodes de congé parental et disponibilité pour suivre le/la conjoint-e sont prises en compte pour
+               la moitié de leur durée.
+            </div>
+         </div>
+      </label>
+      <div class="menuSelection">
+         <select id="annees_separation">
+            <option value="0" selected>0</option>
+            <option value="0.5">0.5</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4 ou plus</option>
+         </select>
+      </div>
    </div>
-</div>
 
-<div class="blocSelection" id="menu_enfants_a_charge">
-   <label for="menu_enfants_a_charge">Nombre d'enfants à charge (ou à naître)
-   <div class="tooltip">ℹ️<div class="tooltiptext">
-        Enfants de moins de 18 ans au 31/08/2020
-   </div></div>
-   </label>
-   <div class="menuSelection">
-      <select id="enfants_a_charge">
-         <option value="0" selected>0</option>
-         <option value="1">1</option>
-         <option value="2">2</option>
-         <option value="3">3</option>
-         <option value="4">4</option>
-         <option value="5">5</option>
-         <option value="6">6</option>
-         <option value="7">7</option>
-         <option value="8">8</option>
-         <option value="9">9</option>
-         <option value="10">10</option>
-      </select>
+   <div class="blocSelection" id="menu_enfants_a_charge">
+      <label for="menu_enfants_a_charge">Nombre d'enfants à charge (ou à naître)
+         <div class="tooltip">ℹ️<div class="tooltiptext">
+               Enfants de moins de 18 ans au 31/08/2020
+            </div>
+         </div>
+      </label>
+      <div class="menuSelection">
+         <select id="enfants_a_charge">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+         </select>
+      </div>
    </div>
-</div>
 
-<div class="blocSelection" id="menu_residences_professionnelles">
-   <label for="menu_residences_professionnelles">Exercice dans un département d’une académie non limitrophe de celle de mon/ma conjoint⋅e ou de l'autre détenteur⋅ice de l'autorité parentale conjointe</label>
-   <div class="menuSelection">
-      <select id="residences_professionnelles">
-         <option value="none" selected>Choisissez…</option>
-         <option value="none">0 année ou autres cas</option>
-         <option value="academies_non_limitrophes">oui et au moins une année de spération</option>
-         
-      </select>
+   <div class="blocSelection" id="menu_residences_professionnelles">
+      <label for="menu_residences_professionnelles">Exercice dans un département d’une académie non limitrophe de celle
+         de mon/ma conjoint⋅e ou de l'autre détenteur⋅ice de l'autorité parentale conjointe</label>
+      <div class="menuSelection">
+         <select id="residences_professionnelles">
+            <option value="none" selected>Choisissez…</option>
+            <option value="none">0 année ou autres cas</option>
+            <option value="academies_non_limitrophes">oui et au moins une année de spération</option>
+
+         </select>
+      </div>
    </div>
-</div>
 
-<h2>Situation personnelle et administrative</h2>
+   <h2>Situation personnelle et administrative</h2>
 
-<div class="blocSelection" id="menu_education_prioritaire">
-   <label for="menu_education_prioritaire">Affectation éducation prioritaire ou contrat local d'accompagnement (CLA) :
-     <div class="tooltip">ℹ️<div class="tooltiptext">
-        Affectation en éducation prioritaire : ancienneté prise en compte au 31 août 2024.<br>
-     </div></div>
-   </label>
-   <div class="menuSelection">
-      <select name="" id="education_prioritaire">
-        <option value="none" selected>Sans objet</option>
-        <option value="rep+">REP+ / pol. de la ville depuis 5 ans et +</option>
-        <option value="rep">REP depuis 5 ans et +</option>
-        <option value="cla">CLA depuis 3 ans et +</option>
-      </select>
+   <div class="blocSelection" id="menu_education_prioritaire">
+      <label for="menu_education_prioritaire">Affectation éducation prioritaire ou contrat local d'accompagnement (CLA)
+         :
+         <div class="tooltip">ℹ️<div class="tooltiptext">
+               Affectation en éducation prioritaire : ancienneté prise en compte au 31 août 2024.<br>
+            </div>
+         </div>
+      </label>
+      <div class="menuSelection">
+         <select name="" id="education_prioritaire">
+            <option value="none" selected>Sans objet</option>
+            <option value="rep+">REP+ / pol. de la ville depuis 5 ans et +</option>
+            <option value="rep">REP depuis 5 ans et +</option>
+            <option value="cla">CLA depuis 3 ans et +</option>
+         </select>
+      </div>
    </div>
-</div>
 
-<div class="blocSelection" id="menu_situation_medicale">
-   <label for="menu_situation_medicale">Situation médicale / handicap :
-     <div class="tooltip">ℹ️<div class="tooltiptext">
-        Demande spéciale au titre du handicap : accord du Dasen nécessaire après avis de la médecine de prévention
-     </div></div>
-   </label>
-   <div class="menuSelection">
-      <select id="situation_medicale">
-         <option value="none" selected>Sans objet</option>
-         <option value="demande_speciale_handicap">Demande spéciale validée</option>
-         <option value="obligation_emploi">Agents bénéficiaires de l'obligation d’emploi</option>
-      </select>
-    </div>
-</div>
-
-
-<h2>Bonifications en fonction du vœu exprimé</h2>
-
-<div class="blocSelection" id="menu_voeu_preferentiel">
-   <label for="menu_voeu_preferentiel">Vœu préférentiel :
-     <div class="tooltip">ℹ️<div class="tooltiptext">
-        Nombre d'années d'expression en 1er vœu<br>
-     </div></div>
-   </label>
-   <div class="menuSelection">
-      <select id="voeu_preferentiel">
-         <option value="1" selected>1ère année</option>
-         <option value="2">2e année consécutive</option>
-         <option value="3">3e année consécutive</option>
-         <option value="4">4e année consécutive</option>
-         <option value="5">5e année consécutive</option>
-         <option value="6">6e année consécutive</option>
-         <option value="7">7e année consécutive</option>
-         <option value="8">8e année consécutive</option>
-         <option value="9">9e année consécutive</option>
-         <option value="10">10e année consécutive</option>
-         <option value="11">11e année consécutive</option>
-         <option value="12">12e année consécutive</option>
-         <option value="13">13e année consécutive</option>
-         <option value="14">14e année consécutive</option>
-         <option value="15">15e année consécutive</option>
-         <option value="16">16e année consécutive</option>
-         <option value="17">17e année consécutive</option>
-         <option value="18">18e année consécutive</option>
-         <option value="19">19e année consécutive</option>
-         <option value="20">20e année consécutive</option>
-         <option value="21">21e année consécutive</option>
-      </select>
+   <div class="blocSelection" id="menu_situation_medicale">
+      <label for="menu_situation_medicale">Situation médicale / handicap :
+         <div class="tooltip">ℹ️<div class="tooltiptext">
+               Demande spéciale au titre du handicap : accord du Dasen nécessaire après avis de la médecine de
+               prévention
+            </div>
+         </div>
+      </label>
+      <div class="menuSelection">
+         <select id="situation_medicale">
+            <option value="none" selected>Sans objet</option>
+            <option value="demande_speciale_handicap">Demande spéciale validée</option>
+            <option value="obligation_emploi">Agents bénéficiaires de l'obligation d’emploi</option>
+         </select>
+      </div>
    </div>
-</div>
+
+
+   <h2>Bonifications en fonction du vœu exprimé</h2>
+
+   <div class="blocSelection" id="menu_voeu_preferentiel">
+      <label for="menu_voeu_preferentiel">Vœu préférentiel :
+         <div class="tooltip">ℹ️<div class="tooltiptext">
+               Nombre d'années d'expression en 1er vœu<br>
+            </div>
+         </div>
+      </label>
+      <div class="menuSelection">
+         <select id="voeu_preferentiel">
+            <option value="1" selected>1ère année</option>
+            <option value="2">2e année consécutive</option>
+            <option value="3">3e année consécutive</option>
+            <option value="4">4e année consécutive</option>
+            <option value="5">5e année consécutive</option>
+            <option value="6">6e année consécutive</option>
+            <option value="7">7e année consécutive</option>
+            <option value="8">8e année consécutive</option>
+            <option value="9">9e année consécutive</option>
+            <option value="10">10e année consécutive</option>
+            <option value="11">11e année consécutive</option>
+            <option value="12">12e année consécutive</option>
+            <option value="13">13e année consécutive</option>
+            <option value="14">14e année consécutive</option>
+            <option value="15">15e année consécutive</option>
+            <option value="16">16e année consécutive</option>
+            <option value="17">17e année consécutive</option>
+            <option value="18">18e année consécutive</option>
+            <option value="19">19e année consécutive</option>
+            <option value="20">20e année consécutive</option>
+            <option value="21">21e année consécutive</option>
+         </select>
+      </div>
+   </div>
 
 
 
-<div class="blocSelection" id="menu_voeu_cimm">
-   <input type="checkbox" id="voeu_cimm">    
-   <label for="voeu_cimm">Centre des intérêts matériels et moraux</label>
-        <div class="tooltip">ℹ️<div class="tooltiptext">
-        Affectation en Dom y compris à Mayotte :<br>
-        → Conditions : Avoir son Centre d’Intérêts Moraux et Matériels (CIMM) dans ce Dom. Formuler le vœu Dom ou Mayotte en rang 1.
-        </div>
-     </div>
-<div class="blocSelection" id="menu_voeu_guyane">
-     <input type="checkbox" id="guyane">    
-   <label for="guyane">Bonification spécifique Guyane</label>
-        <div class="tooltip">ℹ️<div class="tooltiptext">
-        Sous condition d'avoir muté en Guyane, d'être en poste en Guyane depuis au moins 5 ans et d'exercer de manière effective et continue depuis deux ans sur un poste isolé<br>(liste des écoles concernées est consultable dans l’arrêté modifié du 5 mai 2017)
-        </div>
-     </div>
-</div> 
+   <div class="blocSelection" id="menu_voeu_cimm">
+      <input type="checkbox" id="voeu_cimm">
+      <label for="voeu_cimm">Centre des intérêts matériels et moraux</label>
+      <div class="tooltip">ℹ️<div class="tooltiptext">
+            Affectation en Dom y compris à Mayotte :<br>
+            → Conditions : Avoir son Centre d’Intérêts Moraux et Matériels (CIMM) dans ce Dom. Formuler le vœu Dom ou
+            Mayotte en rang 1.
+         </div>
+      </div>
+   </div>
+   <div class="blocSelection" id="menu_voeu_guyane">
+      <input type="checkbox" id="guyane">
+      <label for="guyane">Bonification spécifique Guyane</label>
+      <div class="tooltip">ℹ️<div class="tooltiptext">
+            Sous condition d'avoir muté en Guyane, d'être en poste en Guyane depuis au moins 5 ans et d'exercer de
+            manière effective et continue depuis deux ans sur un poste isolé<br>(liste des écoles concernées est
+            consultable dans l’arrêté modifié du 5 mai 2017)
+         </div>
+      </div>
+   </div>
+   <div class="blocSelection" id="menu_voeu_mayotte">
+      <input type="checkbox" id="mayotte">
+      <label for="mayotte">Bonification spécifique Mayotte</label>
+      <div class="tooltip">ℹ️<div class="tooltiptext">
+         Avoir muté à Mayotte et exercer de manière effective et continue depuis 5 ans sur le territoire de Mayotte
+         </div>
+      </div>
+   </div>
 
-<div class="boutonCalcul" id="calcul">
-   <input type="button" value="Calculer" onclick="calculmutation();" />
-</div>
+   <div class="boutonCalcul" id="calcul">
+      <input type="button" value="Calculer" onclick="calculmutation();" />
+   </div>
 
-<div id="aAfficher">
-   <div id="resultat">
-      <h2>Résultat</h2>
-      <p>Voici une estimation de vos points de mutation:</p>
-      <figure>
-         <table>
-            <thead>
-               <tr>
-                  <th class="col1">Section</th>
-                  <th class="col2">Points</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td class="col1">Partie commune</td>
-                  <td class="col2" id="pt_partie_commune"></td>
-               </tr>
-               <tr>
-                  <td class="col1">Situation familiale</td>
-                  <td class="col2" id="pt_situation_familiale"></td>
-               </tr>
-               <tr>
-                  <td class="col1">Situation personnelle et administrative</td>
-                  <td class="col2" id="pt_situation_personnelle"></td>
-               </tr>
-               <tr>
-                  <td class="col1">Spécifiques aux vœux</td>
-                  <td class="col2" id="pt_voeu"></td>
-               </tr>
+   <div id="aAfficher">
+      <div id="resultat">
+         <h2>Résultat</h2>
+         <p>Voici une estimation de vos points de mutation:</p>
+         <figure>
+            <table>
+               <thead>
+                  <tr>
+                     <th class="col1">Section</th>
+                     <th class="col2">Points</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="col1">Partie commune</td>
+                     <td class="col2" id="pt_partie_commune"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Situation familiale</td>
+                     <td class="col2" id="pt_situation_familiale"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Situation personnelle et administrative</td>
+                     <td class="col2" id="pt_situation_personnelle"></td>
+                  </tr>
+                  <tr>
+                     <td class="col1">Spécifiques aux vœux</td>
+                     <td class="col2" id="pt_voeu"></td>
+                  </tr>
                <tfoot>
-               <tr>
-                  <td class="col1">Total</td>
-                  <td class="col2" id="pt_total"></td>
-               </tr>
+                  <tr>
+                     <td class="col1">Total</td>
+                     <td class="col2" id="pt_total"></td>
+                  </tr>
                </tfoot>
-            </tbody>
-         </table>
-      </figure>
+               </tbody>
+            </table>
+         </figure>
+      </div>
    </div>
-</div>
 </body>
 
 </html>

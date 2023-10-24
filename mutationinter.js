@@ -32,6 +32,7 @@ function calculmutation() {
     const pt_voeux_voeu_preferentiel_par_annee_consecutive = 5;
     const cimm = 600;
     const guyane = 90;
+    const mayotte = 800;
 
 
     /* -------------------------
@@ -106,6 +107,11 @@ function calculmutation() {
     // Guyane
     if (document.getElementById("guyane").checked) {
         pt_voeu += guyane;
+    }
+    
+    // Mayotte
+    if (document.getElementById("mayotte").checked) {
+        pt_voeu += mayotte;
     }
 
     // Somme totale 
