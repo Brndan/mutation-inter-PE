@@ -1,6 +1,6 @@
 # Calculateur mutations interdépartementales PE
 
-Code javascript et formulaire pour calcul des barèmes des personnels enseignants mutations interdépartementales des PE en 2023.
+Code javascript et formulaire pour calcul des barèmes des personnels enseignants en vue des mutations interdépartementales des PE en novembre 2023.
 
 
 
