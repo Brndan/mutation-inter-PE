@@ -23,6 +23,7 @@ function calculmutation() {
                                                                         "rep+"        : 90,
                                                                         "rep"         : 45,
                                                                         "cla"         : 27};
+    const pt_poste_profil = 27;
     const pt_situation_personnelle_situation_medicale = {"none"                           : 0,
                                                          "demande_speciale_handicap"      : 800,
                                                          "obligation_emploi"              : 100  };
@@ -72,7 +73,6 @@ function calculmutation() {
     // séparation
     let annees_separation = document.getElementById("annees_separation").value;
     pt_situation_familiale += parseInt(pt_situation_familiale_annees_de_separation[annees_separation],10);
-    console.log(pt_situation_familiale);
 
     // académies non-limitrophes
     pt_situation_familiale += pt_situation_familiale_residences_professionnelles[document.getElementById("residences_professionnelles").value];
@@ -84,6 +84,9 @@ function calculmutation() {
 
     //rep/rep+
     pt_situation_personnelle += pt_situation_personnelle_affectation_education_prioritaire[document.getElementById("education_prioritaire").value];
+    if (document.getElementById("poste_profil").checked) {
+        pt_situation_personnelle += pt_poste_profil;
+    }
 
     // Handicap
     pt_situation_personnelle += pt_situation_personnelle_situation_medicale[document.getElementById("situation_medicale").value];
