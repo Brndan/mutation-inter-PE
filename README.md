@@ -1,6 +1,6 @@
 # Calculateur mutations interdépartementales PE
 
-Code javascript et formulaire pour calcul des barèmes des personnels enseignants en vue des mutations interdépartementales des PE en novembre 2025 pour la rentrée 2026.
+Code javascript et formulaire pour calcul des barèmes des personnels enseignants en vue des mutations interdépartementales des PE en novembre 2026 pour la rentrée 2027.
 
 
 
